@@ -1,4 +1,27 @@
+CREATE TABLE employees (
+  emp_id INT PRIMARY KEY,
+  name VARCHAR(50),
+  department_id INT
+);
+INSERT INTO employees VALUES
+  (1, 'Karthik', 101),
+(2, 'Veena', 102),
+(3, 'Meena', NULL),
+(4, 'Veer', 103),
+(5, 'Ajay', 104),
+(6, 'Vijay', NULL),
+(7, 'Keerthi', 105);
 select * from employees;
+CREATE TABLE departments (
+  department_id INT PRIMARY KEY,
+  department_name VARCHAR(50)
+);
+INSERT INTO departments VALUES
+  (101, 'HR'),
+(102, 'Finance'),
+(103, 'IT'),
+(104, 'Marketing'),
+(106, 'Operations');
 select * from departments;
 
 /*List all employees and their department names, but only include employees assigned to a
